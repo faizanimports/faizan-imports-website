@@ -1443,7 +1443,9 @@ var DIVISIONS = [
         if (arr.length > 1) DIVISIONS[i].imgs = arr;
       }
       if (DIVISIONS[i].chip === "Division 01") {
-        DIVISIONS[i].imgs = ["images/divisions/automotive-1.jpg","images/divisions/automotive-2.jpg","images/divisions/automotive-3.jpg"];
+        var arr1 = [];
+        PRODUCTS.forEach(function(p){ if (p.division === "automotive") { (p.images && p.images.length ? p.images : [p.img]).forEach(function(s){ arr1.push(s); }); } });
+        if (arr1.length > 1) DIVISIONS[i].imgs = arr1;
       }
       if (DIVISIONS[i].chip === "Division 02") {
         DIVISIONS[i].imgs = ["images/divisions/agriculture-1.jpg","images/divisions/agriculture-2.jpg","images/divisions/agriculture-3.jpg"];
