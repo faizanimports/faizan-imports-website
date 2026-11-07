@@ -189,6 +189,9 @@ section{padding:84px 0} section.alt{background:var(--bg-alt)}
 .check-list{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:11px}
 .check-list li{display:flex;gap:10px;font-size:15.5px;font-weight:500}
 .check-list li svg{width:17px;height:17px;flex:none;margin-top:4px;stroke:var(--gold)}
+.pn-related{display:block;margin-top:4px;font-size:13.5px;font-weight:400;color:var(--ink-soft)}
+.pn-related button{background:none;border:0;padding:0;color:var(--blue);font:inherit;font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.pn-related button:hover{color:var(--gold)}
 /* trade split */
 .trade{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .trade .panel{border-radius:var(--radius);padding:34px 32px;color:#fff;position:relative;overflow:hidden}
@@ -371,6 +374,9 @@ footer ul a:hover{color:var(--gold-soft)}
 .modal .spec .sv{font-weight:600;font-size:14.5px;margin-top:3px;line-height:1.45}
 .modal .mdesc{margin-top:14px;color:var(--ink-soft);font-size:15.5px}
 .modal .mactions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.modal .mrelated{margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+.modal .mrelated h4{font-size:15px;margin-bottom:10px}
+.modal .mrelated-links{display:flex;flex-wrap:wrap;gap:8px}
 /* motion */
 @keyframes revealIn{from{opacity:.2;transform:translateY(18px)}to{opacity:1;transform:none}}
 .reveal.in{animation:revealIn .7s ease both}
@@ -445,7 +451,7 @@ footer ul a:hover{color:var(--gold-soft)}
     </span>
     <span class="item">
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-      <a href="mailto:info@faizanimports.com">info@faizanimports.com</a>
+      <a href="/cdn-cgi/l/email-protection#89e0e7efe6c9efe8e0f3e8e7e0e4f9e6fbfdfaa7eae6e4"><span class="__cf_email__" data-cfemail="6e070008012e080f07140f0007031e011c1a1d400d0103">[email&#160;protected]</span></a>
     </span>
     <span class="spacer"></span>
     <span class="item addr">
@@ -767,7 +773,7 @@ footer ul a:hover{color:var(--gold-soft)}
           <div class="fact"><div class="fl">Call</div><div class="fv"><a href="tel:+923036684401">+92 303 6684401</a></div></div>
           <div class="fact"><div class="fl">WhatsApp Business</div><div class="fv"><a href="https://wa.me/66926945006" target="_blank" rel="noopener">+66 926 945 006</a></div></div>
           <div class="fact"><div class="fl">Oversees</div><div class="fv">All divisions, end to end</div></div>
-          <div class="fact"><div class="fl">Email</div><div class="fv"><a href="mailto:info@faizanimports.com">info@faizanimports.com</a></div></div>
+          <div class="fact"><div class="fl">Email</div><div class="fv"><a href="/cdn-cgi/l/email-protection#f79e999198b791969e8d96999e9a8798858384d994989a"><span class="__cf_email__" data-cfemail="91f8fff7fed1f7f0f8ebf0fff8fce1fee3e5e2bff2fefc">[email&#160;protected]</span></a></div></div>
         </div>
         <div class="founder-cta">
           <a class="btn btn-wa" href="https://wa.me/66926945006?text=Assalam-o-Alaikum%20Faizan%20sahab%2C%20I%20have%20a%20business%20enquiry%20for%20Faizan%20Imports." target="_blank" rel="noopener">WhatsApp the Founder</a>
@@ -795,7 +801,7 @@ footer ul a:hover{color:var(--gold-soft)}
           <div class="cell wide"><div class="cl">Head Office</div><div class="cv">Momin Square, 5th Floor, Office C19, Gulshan-e-Iqbal Block 6, Karachi, Sindh 75300, Pakistan</div></div>
           <div class="cell"><div class="cl">Call</div><div class="cv"><a href="tel:+923036684401">+92 303 6684401</a></div></div>
           <div class="cell"><div class="cl">WhatsApp Business</div><div class="cv"><a href="https://wa.me/66926945006" target="_blank" rel="noopener">+66 926 945 006</a></div></div>
-          <div class="cell"><div class="cl">Email</div><div class="cv"><a href="mailto:info@faizanimports.com">info@faizanimports.com</a></div></div>
+          <div class="cell"><div class="cl">Email</div><div class="cv"><a href="/cdn-cgi/l/email-protection#6d04030b022d0b0c04170c0304001d021f191e430e0200"><span class="__cf_email__" data-cfemail="1a73747c755a7c7b73607b7473776a75686e6934797577">[email&#160;protected]</span></a></div></div>
           <div class="cell"><div class="cl">Website</div><div class="cv">faizanimports.com</div></div>
         </div>
         <div class="profile-status"><div class="cl">Current Status</div><div class="cv"><span class="dot"></span>Active — accepting import &amp; export enquiries</div></div>
@@ -864,14 +870,14 @@ footer ul a:hover{color:var(--gold-soft)}
       <div class="sec-head reveal" style="margin-top:56px"><span class="kicker-sm">Find by Part Number</span><h2>Genuine Toyota parts by part number</h2><p>Most buyers search by part number. The genuine Toyota parts below are stocked for wholesale supply across Pakistan — tap a part number to ask for its price on WhatsApp.</p></div>
       <div class="card reveal"><h3>Part number index</h3>
         <ul class="check-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%209004A-91068%20(Iridium%20Spark%20Plug).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>9004A-91068</strong></a> — Iridium Spark Plug (Toyota)</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2090919-01191%20(Iridium%20Spark%20Plug%20SK20HR11).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>90919-01191</strong></a> — Iridium Spark Plug SK20HR11 (Denso, Toyota)</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2090919-01210%20(Iridium%20Spark%20Plug%20SK20R11).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>90919-01210</strong></a> — Iridium Spark Plug SK20R11 (Denso, Toyota / Lexus)</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2043310-09015%20(Ball%20Joint%20Assembly).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>43310-09015</strong></a> — Ball Joint Assembly (Toyota, Made in Japan)</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2043330-09510%20(Lower%20Ball%20Joint%20Assembly).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>43330-09510</strong></a> — Lower Ball Joint Assembly (Toyota)</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2016620-0Y061%20(V-Ribbed%20Belt%20Tensioner%20Assembly).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>16620-0Y061</strong></a> — V-Ribbed Belt Tensioner Assembly (Toyota / Lexus)</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2023390-0L070%20(Fuel%20Filter%20Element%20Assembly).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>23390-0L070</strong></a> — Fuel Filter Element Assembly (Toyota / Lexus)</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2023390-0E011%20(Fuel%20Filter%20Element%20Assembly).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>23390-0E011</strong></a> — Fuel Filter Element Assembly (Toyota / Lexus)</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%209004A-91068%20(Iridium%20Spark%20Plug).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>9004A-91068</strong></a> — Iridium Spark Plug (Toyota)<span class="pn-related">Related: <button type="button" data-details="spark-plug-90919-01191">90919-01191</button> · <button type="button" data-details="spark-plug-90919-01210">90919-01210</button></span></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2090919-01191%20(Iridium%20Spark%20Plug%20SK20HR11).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>90919-01191</strong></a> — Iridium Spark Plug SK20HR11 (Denso, Toyota)<span class="pn-related">Related: <button type="button" data-details="spark-plug-9004a-91068">9004A-91068</button> · <button type="button" data-details="spark-plug-90919-01210">90919-01210</button></span></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2090919-01210%20(Iridium%20Spark%20Plug%20SK20R11).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>90919-01210</strong></a> — Iridium Spark Plug SK20R11 (Denso, Toyota / Lexus)<span class="pn-related">Related: <button type="button" data-details="spark-plug-9004a-91068">9004A-91068</button> · <button type="button" data-details="spark-plug-90919-01191">90919-01191</button></span></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2043310-09015%20(Ball%20Joint%20Assembly).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>43310-09015</strong></a> — Ball Joint Assembly (Toyota, Made in Japan)<span class="pn-related">Related: <button type="button" data-details="ball-joint-43330-09510">43330-09510</button></span></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2043330-09510%20(Lower%20Ball%20Joint%20Assembly).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>43330-09510</strong></a> — Lower Ball Joint Assembly (Toyota)<span class="pn-related">Related: <button type="button" data-details="ball-joint-43310-09015">43310-09015</button></span></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2016620-0Y061%20(V-Ribbed%20Belt%20Tensioner%20Assembly).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>16620-0Y061</strong></a> — V-Ribbed Belt Tensioner Assembly (Toyota / Lexus)<span class="pn-related">Related: <button type="button" data-details="fuel-filter-23390-0l070">23390-0L070</button> · <button type="button" data-details="fuel-filter-23390-0e011">23390-0E011</button></span></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2023390-0L070%20(Fuel%20Filter%20Element%20Assembly).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>23390-0L070</strong></a> — Fuel Filter Element Assembly (Toyota / Lexus)<span class="pn-related">Related: <button type="button" data-details="fuel-filter-23390-0e011">23390-0E011</button> · <button type="button" data-details="tensioner-16620-0y061">16620-0Y061</button></span></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20would%20like%20the%20price%20of%20part%20number%2023390-0E011%20(Fuel%20Filter%20Element%20Assembly).%20Please%20share%20your%20quotation." target="_blank" rel="noopener"><strong>23390-0E011</strong></a> — Fuel Filter Element Assembly (Toyota / Lexus)<span class="pn-related">Related: <button type="button" data-details="fuel-filter-23390-0l070">23390-0L070</button> · <button type="button" data-details="tensioner-16620-0y061">16620-0Y061</button></span></span></li>
         </ul>
         <p style="margin-top:16px">Can&rsquo;t find your part number? Send it on <a href="https://wa.me/66926945006?text=Assalam-o-Alaikum%2C%20I%20am%20looking%20for%20a%20Toyota%20part%20number.%20Please%20confirm%20availability%20and%20price." target="_blank" rel="noopener">WhatsApp</a> and we will source it for you.</p>
       </div>
@@ -887,6 +893,7 @@ footer ul a:hover{color:var(--gold-soft)}
         <h3 style="margin-top:22px">How do I get a price for a part number?</h3>
         <p>Tap any part number in the index above, or send the part number and quantity on WhatsApp to +66 926 945 006. Prices are shared on enquiry only, and we confirm availability and fitment first.</p>
       </div>
+      <p class="reveal" style="margin-top:20px">Looking beyond auto parts? Explore our other divisions: <a href="#/fruits">Fresh Fruits</a>, <a href="#/agriculture">Agricultural Machinery &amp; Equipment</a> and <a href="#/vegetables">Fresh Vegetables</a> — or browse the full <a href="#/catalogue">Product Catalogue</a>.</p>
     </div>
   </section>
 </div>
@@ -1153,7 +1160,7 @@ footer ul a:hover{color:var(--gold-soft)}
         <div class="hp-field" aria-hidden="true"><label>Leave this field empty<input type="text" id="qHoney" name="company_website" tabindex="-1" autocomplete="off" /></label></div>
         <button class="btn btn-gold" type="submit">Submit Business Enquiry</button>
         <div class="form-success" id="quoteSuccess">Thank you — your enquiry is ready. WhatsApp should now be open with your message pre-filled; just press send there. If it did not open, message us on WhatsApp Business: +66 926 945 006.</div>
-        <p class="form-note">Prefer email? Write to <a href="mailto:info@faizanimports.com">info@faizanimports.com</a> · Call: <a href="tel:+923036684401">+92 303 6684401</a></p>
+        <p class="form-note">Prefer email? Write to <a href="/cdn-cgi/l/email-protection#147d7a727b5472757d6e757a7d79647b6660673a777b79"><span class="__cf_email__" data-cfemail="167f7870795670777f6c77787f7b66796462653875797b">[email&#160;protected]</span></a> · Call: <a href="tel:+923036684401">+92 303 6684401</a></p>
       </form>
     </div>
   </section>
@@ -1198,7 +1205,7 @@ footer ul a:hover{color:var(--gold-soft)}
     <h2>Sharing</h2>
     <p>We share details only where necessary to fulfil your order — for example, specifications and delivery details shared with suppliers and shipping partners. We do not sell your personal information.</p>
     <h2>Contact about privacy</h2>
-    <p>For any question about how your information is handled, email <a href="mailto:info@faizanimports.com">info@faizanimports.com</a> or call <a href="tel:+923036684401">+92 303 6684401</a>.</p>
+    <p>For any question about how your information is handled, email <a href="/cdn-cgi/l/email-protection#e980878f86a98f8880938887808499869b9d9ac78a8684"><span class="__cf_email__" data-cfemail="771e1911183711161e0d16191e1a07180503045914181a">[email&#160;protected]</span></a> or call <a href="tel:+923036684401">+92 303 6684401</a>.</p>
   </div></section>
 </div>
 
@@ -1218,7 +1225,7 @@ footer ul a:hover{color:var(--gold-soft)}
     <h2>Specifications</h2>
     <p>For automotive and machinery orders, buyers are responsible for confirming model, fitment and specification details with us before an order is placed; we confirm the same details with suppliers and share them for approval.</p>
     <h2>Contact</h2>
-    <p>Faizan Imports, Momin Square, 5th Floor, Office C19, Gulshan-e-Iqbal Block 6, Karachi, Sindh 75300, Pakistan · <a href="mailto:info@faizanimports.com">info@faizanimports.com</a> · Call: <a href="tel:+923036684401">+92 303 6684401</a> · WhatsApp Business: <a href="https://wa.me/66926945006" target="_blank" rel="noopener">+66 926 945 006</a>.</p>
+    <p>Faizan Imports, Momin Square, 5th Floor, Office C19, Gulshan-e-Iqbal Block 6, Karachi, Sindh 75300, Pakistan · <a href="/cdn-cgi/l/email-protection#fd94939b92bd9b9c94879c9394908d928f898ed39e9290"><span class="__cf_email__" data-cfemail="5c35323a331c3a3d35263d3235312c332e282f723f3331">[email&#160;protected]</span></a> · Call: <a href="tel:+923036684401">+92 303 6684401</a> · WhatsApp Business: <a href="https://wa.me/66926945006" target="_blank" rel="noopener">+66 926 945 006</a>.</p>
   </div></section>
 </div>
 </main>
@@ -1263,7 +1270,7 @@ footer ul a:hover{color:var(--gold-soft)}
           <li>Momin Square, 5th Floor, Office C19, Gulshan-e-Iqbal Block 6, Karachi, Sindh 75300, Pakistan</li>
           <li>Call: <a href="tel:+923036684401">+92 303 6684401</a></li>
           <li>WhatsApp Business: <a href="https://wa.me/66926945006" target="_blank" rel="noopener">+66 926 945 006</a></li>
-          <li><a href="mailto:info@faizanimports.com">info@faizanimports.com</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#e58c8b838aa583848c9f848b8c88958a979196cb868a88"><span class="__cf_email__" data-cfemail="8fe6e1e9e0cfe9eee6f5eee1e6e2ffe0fdfbfca1ece0e2">[email&#160;protected]</span></a></li>
            <li>LinkedIn: <a href="https://www.linkedin.com/in/faizan-ali-ab984439a" target="_blank" rel="noopener">Faizan Ali — Founder & CEO</a></li>
         </ul>
       </div>
@@ -1299,6 +1306,7 @@ footer ul a:hover{color:var(--gold-soft)}
       <h3 id="modalTitle"></h3>
       <p class="mdesc" id="modalDesc"></p>
       <div class="spec-grid" id="modalSpecs"></div>
+      <div class="mrelated" id="modalRelated" style="display:none"><h4>Related parts</h4><div class="mrelated-links" id="modalRelatedLinks"></div></div>
       <div class="mactions">
         <a class="btn btn-gold" id="modalPrice" href="#" target="_blank" rel="noopener">Request Price</a>
         <a class="btn btn-wa" id="modalWa" href="#" target="_blank" rel="noopener">WhatsApp Enquiry</a>
@@ -1308,7 +1316,7 @@ footer ul a:hover{color:var(--gold-soft)}
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 (function(){
 "use strict";
 /* ================= SITE CONFIG — edit contact details here ================= */
@@ -1621,6 +1629,16 @@ sliderEl.addEventListener("touchend", function(e){
   if (Math.abs(dx) > 40) sliderGo(sliderIdx + (dx < 0 ? 1 : -1));
   touchX = null; sliderStart();
 }, { passive:true });
+function relatedProducts(p){
+  function family(x){
+    if (/Spark Plug/i.test(x.name)) return "spark";
+    if (/Ball Joint/i.test(x.name)) return "ball";
+    if (/Fuel Filter|Tensioner/i.test(x.name)) return "service";
+    return x.category;
+  }
+  var f = family(p);
+  return PRODUCTS.filter(function(x){ return x.id !== p.id && family(x) === f; });
+}
 function openProduct(id){
   var p = null;
   PRODUCTS.forEach(function(x){ if (x.id === id) p = x; });
@@ -1633,6 +1651,13 @@ function openProduct(id){
   document.getElementById("modalTitle").textContent = p.name;
   document.getElementById("modalDesc").textContent = p.desc;
   document.getElementById("modalSpecs").innerHTML = p.specs.map(function(s){ return '<div class="spec"><div class="sl">'+esc(s[0])+'</div><div class="sv">'+esc(s[1])+'</div></div>'; }).join("");
+  var rel = relatedProducts(p);
+  var relBox = document.getElementById("modalRelated");
+  if (rel.length){
+    document.getElementById("modalRelatedLinks").innerHTML = rel.map(function(r){ return '<button class="btn btn-outline" type="button" data-details="'+r.id+'">'+esc(r.name)+'</button>'; }).join("");
+    bindDetails(document.getElementById("modalRelatedLinks"));
+    relBox.style.display = "block";
+  } else { relBox.style.display = "none"; }
   document.getElementById("modalPrice").href = waLink("Assalam-o-Alaikum, I would like the price of: " + p.name + " (" + p.category + "). Please share your quotation.");
   document.getElementById("modalWa").href = waLink("Assalam-o-Alaikum, I have an enquiry about: " + p.name + " (" + p.category + ").");
   modal.classList.add("open");
